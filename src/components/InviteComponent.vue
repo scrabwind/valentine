@@ -2,9 +2,12 @@
   import { ref } from "vue";
   import { useWindowSize, templateRef } from "@vueuse/core";
 
-  import jumpingCat from "../assets/love/jumping-cat.gif";
-  import dancingCat from "../assets/love/dancing-cat.gif";
-  import mochiCat from "../assets/love/mochi-cat.gif";
+  const jumpingCat = new URL("../assets/love/jumping-cat.gif", import.meta.url)
+    .href;
+  const dancingCat = new URL("../assets/love/dancing-cat.gif", import.meta.url)
+    .href;
+  const mochiCat = new URL("../assets/love/mochi-cat.gif", import.meta.url)
+    .href;
 
   const getRandomInt = (max: number) => {
     return Math.floor(Math.random() * max);
