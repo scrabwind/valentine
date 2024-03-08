@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.7.2",
+    "vite-svg-loader": "^5.1.0",
     "vue": "^3.4.15"
   },
   "devDependencies": {
